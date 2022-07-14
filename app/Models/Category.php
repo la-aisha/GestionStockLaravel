@@ -8,10 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     protected $fillable = array('nomCat');
-    public static $rules= array('nomCat'=>'required|min:15')
+    public static $rules= array('nomCat'=>'required|min:15');
 
     public function product(){
         return $this->hasMany('App\Product')
     }
 
 }
+

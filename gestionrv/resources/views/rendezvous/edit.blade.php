@@ -1,1 +1,0 @@
-yes edit rendez-vous
