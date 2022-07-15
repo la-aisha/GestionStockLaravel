@@ -181,6 +181,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Illuminate\Auth\AuthServiceProvider::class,
+
 
         /*
          * Package Service Providers...
@@ -209,6 +211,8 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+        'Auth' => Illuminate\Support\Facades\Auth::class,
+
         // 'ExampleClass' => App\Example\ExampleClass::class,
     ])->toArray(),
 
